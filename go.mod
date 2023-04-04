@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/go-kit/kit v0.12.0
 	github.com/go-kit/log v0.2.1
-	github.com/peterbourgon/ff/v3 v3.1.2
+	github.com/peterbourgon/ff/v3 v3.3.0
 	github.com/prometheus/client_golang v1.11.0
 )
 
