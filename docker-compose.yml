@@ -2,13 +2,13 @@ version: '3.1'
 
 services:
   prometheus-browserless-exporter:
-    image: tehwey/prometheus-browserless-exporter:latest
+    image: ghcr.io/bengtfredh/prometheus-browserless-exporter:latest
     restart: always
     environment:
       LISTEN_ADDR: :3001
       TIMEOUT: 5
       DEBUG: TRUE
-      BROWSERLESS_ENDPOINT: http://localhost:3001/metrics/total
+      BROWSERLESS_ENDPOINT: http://localhost:3000/metrics/total
       METRICS_PATH: /metrics
     ports:
       - "3001:3001"
